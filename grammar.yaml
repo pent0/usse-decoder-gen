@@ -200,6 +200,72 @@ VPCK:
             size: 4
             offset: 1
         - comp_sel_0_bit0: 1
+VCOMP:
+    description: Vector Complex Instructions
+    members:
+        - op1: '00110'
+        - pred:
+            size: 3
+            type: ExtPredicate
+            offset: 56
+        - skipinv:
+            size: 1
+            type: bool
+            offset: 55
+        - dest_type:
+            size: 2
+            offset: 53
+        - syncstart:
+            size: 1
+            type: bool
+            offset: 52
+        - dest_bank_ext:
+            size: 1
+            type: bool
+            offset: 51
+        - end:
+            size: 1
+            type: bool
+            offset: 50
+        - src1_bank_ext:
+            size: 1
+            type: bool
+            offset: 49
+        - repeat_count:
+            size: 4
+            type: RepeatCount
+            offset: 44
+        - nosched:
+            size: 1
+            offset: 43
+            type: bool
+        - op2:
+            size: 2
+            offset: 41
+        - src_type:
+            size: 2
+            offset: 39
+        - src1_mod:
+            size: 2
+            offset: 37
+        - src_comp:
+            size: 2
+            offset: 35
+        - dest_bank:
+            size: 2
+            offset: 32
+        - src1_bank:
+            size: 2
+            offset: 30
+        - dest_n:
+            offset: 21
+            size: 7
+        - src1_n:
+            offset: 7
+            size: 6
+        - write_mask:
+            size: 4
+            offset: 0
 PHAS:
     description: Phase
     members:
